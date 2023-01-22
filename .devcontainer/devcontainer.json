@@ -1,0 +1,7 @@
+{
+  "name": "crypteia",
+  "image": "mcr.microsoft.com/vscode/devcontainers/rust",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:latest": {}
+  }
+}
