@@ -29,8 +29,7 @@ jobs:
         with:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: |
-            docker info
+          runCmd: cat /tmp/dockerd.log
   test-1:
     runs-on: ubuntu-latest
     needs: image
@@ -40,7 +39,7 @@ jobs:
         with:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: docker info
+          runCmd: cat /tmp/dockerd.log
   test-2:
     runs-on: ubuntu-latest
     needs: image
@@ -50,7 +49,7 @@ jobs:
         with:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: docker info
+          runCmd: cat /tmp/dockerd.log
   test-3:
     runs-on: ubuntu-latest
     needs: image
@@ -60,7 +59,7 @@ jobs:
         with:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: docker info
+          runCmd: cat /tmp/dockerd.log
   test-4:
     runs-on: ubuntu-latest
     needs: image
@@ -70,7 +69,7 @@ jobs:
         with:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: docker info
+          runCmd: cat /tmp/dockerd.log
   test-5:
     runs-on: ubuntu-latest
     needs: image
@@ -80,7 +79,7 @@ jobs:
         with:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: docker info
+          runCmd: cat /tmp/dockerd.log
   test-6:
     runs-on: ubuntu-latest
     needs: image
@@ -90,7 +89,7 @@ jobs:
         with:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: docker info
+          runCmd: cat /tmp/dockerd.log
   test-7:
     runs-on: ubuntu-latest
     needs: image
@@ -100,7 +99,7 @@ jobs:
         with:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: docker info
+          runCmd: cat /tmp/dockerd.log
   test-8:
     runs-on: ubuntu-latest
     needs: image
@@ -110,7 +109,7 @@ jobs:
         with:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: docker info
+          runCmd: cat /tmp/dockerd.log
   test-9:
     runs-on: ubuntu-latest
     needs: image
@@ -120,4 +119,4 @@ jobs:
         with:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: docker info
+          runCmd: cat /tmp/dockerd.log
