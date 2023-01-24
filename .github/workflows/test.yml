@@ -29,7 +29,8 @@ jobs:
         with:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: cat /tmp/dockerd.log
+          runCmd: |
+            docker info
   test-1:
     runs-on: ubuntu-20.04
     needs: image
@@ -39,7 +40,8 @@ jobs:
         with:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: cat /tmp/dockerd.log
+          runCmd: |
+            docker info
   test-2:
     runs-on: ubuntu-20.04
     needs: image
@@ -49,7 +51,8 @@ jobs:
         with:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: cat /tmp/dockerd.log
+          runCmd: |
+            docker info
   test-3:
     runs-on: ubuntu-20.04
     needs: image
@@ -59,7 +62,8 @@ jobs:
         with:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: cat /tmp/dockerd.log
+          runCmd: |
+            docker info
   test-4:
     runs-on: ubuntu-20.04
     needs: image
@@ -69,7 +73,8 @@ jobs:
         with:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: cat /tmp/dockerd.log
+          runCmd: |
+            docker info
   test-5:
     runs-on: ubuntu-20.04
     needs: image
@@ -79,7 +84,8 @@ jobs:
         with:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: cat /tmp/dockerd.log
+          runCmd: |
+            docker info
   test-6:
     runs-on: ubuntu-20.04
     needs: image
@@ -89,7 +95,8 @@ jobs:
         with:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: cat /tmp/dockerd.log
+          runCmd: |
+            docker info
   test-7:
     runs-on: ubuntu-20.04
     needs: image
@@ -99,7 +106,8 @@ jobs:
         with:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: cat /tmp/dockerd.log
+          runCmd: |
+            docker info
   test-8:
     runs-on: ubuntu-20.04
     needs: image
@@ -109,7 +117,8 @@ jobs:
         with:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: cat /tmp/dockerd.log
+          runCmd: |
+            docker info
   test-9:
     runs-on: ubuntu-20.04
     needs: image
@@ -119,4 +128,5 @@ jobs:
         with:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: cat /tmp/dockerd.log
+          runCmd: |
+            docker info
