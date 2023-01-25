@@ -1,141 +1,84 @@
 name: Test
 on: [push]
 jobs:
-  image:
-    name: Image
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: GitHub Registry Login
-        uses: docker/login-action@v2
-        with:
-          registry: ghcr.io
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Build DevContainer
-        uses: devcontainers/ci@v0.2
-        with:
-          push: always
-          imageName: ghcr.io/customink/dnd-demo-ci
-          cacheFrom: ghcr.io/customink/dnd-demo-ci
-          runCmd: echo DONE!
   test-0:
     runs-on: ubuntu-latest
-    needs: image
     steps:
-      - uses: actions/checkout@v3
-      - uses: devcontainers/ci@v0.2
-        with:
-          push: never
-          cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: |
-            /usr/local/share/docker-init.sh
-            docker info
+      - run: curl -s https://raw.githubusercontent.com/devcontainers/features/main/src/docker-in-docker/install.sh | bash /dev/stdin 1> /dev/null
   test-1:
     runs-on: ubuntu-latest
-    needs: image
     steps:
-      - uses: actions/checkout@v3
-      - uses: devcontainers/ci@v0.2
-        with:
-          push: never
-          cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: |
-            /usr/local/share/docker-init.sh
-            docker info
+      - run: curl -s https://raw.githubusercontent.com/devcontainers/features/main/src/docker-in-docker/install.sh | bash /dev/stdin 1> /dev/null
   test-2:
     runs-on: ubuntu-latest
-    needs: image
     steps:
-      - uses: actions/checkout@v3
-      - uses: devcontainers/ci@v0.2
-        with:
-          push: never
-          cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: |
-            /usr/local/share/docker-init.sh
-            docker info
+      - run: curl -s https://raw.githubusercontent.com/devcontainers/features/main/src/docker-in-docker/install.sh | bash /dev/stdin 1> /dev/null
   test-3:
     runs-on: ubuntu-latest
-    needs: image
     steps:
-      - uses: actions/checkout@v3
-      - uses: devcontainers/ci@v0.2
-        with:
-          push: never
-          cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: |
-            /usr/local/share/docker-init.sh
-            docker info
+      - run: curl -s https://raw.githubusercontent.com/devcontainers/features/main/src/docker-in-docker/install.sh | bash /dev/stdin 1> /dev/null
   test-4:
     runs-on: ubuntu-latest
-    needs: image
     steps:
-      - uses: actions/checkout@v3
-      - uses: devcontainers/ci@v0.2
-        with:
-          push: never
-          cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: |
-            /usr/local/share/docker-init.sh
-            docker info
+      - run: curl -s https://raw.githubusercontent.com/devcontainers/features/main/src/docker-in-docker/install.sh | bash /dev/stdin 1> /dev/null
   test-5:
     runs-on: ubuntu-latest
-    needs: image
     steps:
-      - uses: actions/checkout@v3
-      - uses: devcontainers/ci@v0.2
-        with:
-          push: never
-          cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: |
-            /usr/local/share/docker-init.sh
-            docker info
+      - run: curl -s https://raw.githubusercontent.com/devcontainers/features/main/src/docker-in-docker/install.sh | bash /dev/stdin 1> /dev/null
   test-6:
     runs-on: ubuntu-latest
-    needs: image
     steps:
-      - uses: actions/checkout@v3
-      - uses: devcontainers/ci@v0.2
-        with:
-          push: never
-          cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: |
-            /usr/local/share/docker-init.sh
-            docker info
+      - run: curl -s https://raw.githubusercontent.com/devcontainers/features/main/src/docker-in-docker/install.sh | bash /dev/stdin 1> /dev/null
   test-7:
     runs-on: ubuntu-latest
-    needs: image
     steps:
-      - uses: actions/checkout@v3
-      - uses: devcontainers/ci@v0.2
-        with:
-          push: never
-          cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: |
-            /usr/local/share/docker-init.sh
-            docker info
+      - run: curl -s https://raw.githubusercontent.com/devcontainers/features/main/src/docker-in-docker/install.sh | bash /dev/stdin 1> /dev/null
   test-8:
     runs-on: ubuntu-latest
-    needs: image
     steps:
-      - uses: actions/checkout@v3
-      - uses: devcontainers/ci@v0.2
-        with:
-          push: never
-          cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: |
-            /usr/local/share/docker-init.sh
-            docker info
+      - run: curl -s https://raw.githubusercontent.com/devcontainers/features/main/src/docker-in-docker/install.sh | bash /dev/stdin 1> /dev/null
   test-9:
     runs-on: ubuntu-latest
-    needs: image
     steps:
-      - uses: actions/checkout@v3
-      - uses: devcontainers/ci@v0.2
-        with:
-          push: never
-          cacheFrom: ghcr.io/customink/crypteia-ci
-          runCmd: |
-            
+      - run: curl -s https://raw.githubusercontent.com/devcontainers/features/main/src/docker-in-docker/install.sh | bash /dev/stdin 1> /dev/null
+  test-10:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -s https://raw.githubusercontent.com/devcontainers/features/main/src/docker-in-docker/install.sh | bash /dev/stdin 1> /dev/null
+  test-11:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -s https://raw.githubusercontent.com/devcontainers/features/main/src/docker-in-docker/install.sh | bash /dev/stdin 1> /dev/null
+  test-12:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -s https://raw.githubusercontent.com/devcontainers/features/main/src/docker-in-docker/install.sh | bash /dev/stdin 1> /dev/null
+  test-13:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -s https://raw.githubusercontent.com/devcontainers/features/main/src/docker-in-docker/install.sh | bash /dev/stdin 1> /dev/null
+  test-14:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -s https://raw.githubusercontent.com/devcontainers/features/main/src/docker-in-docker/install.sh | bash /dev/stdin 1> /dev/null
+  test-15:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -s https://raw.githubusercontent.com/devcontainers/features/main/src/docker-in-docker/install.sh | bash /dev/stdin 1> /dev/null
+  test-16:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -s https://raw.githubusercontent.com/devcontainers/features/main/src/docker-in-docker/install.sh | bash /dev/stdin 1> /dev/null
+  test-17:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -s https://raw.githubusercontent.com/devcontainers/features/main/src/docker-in-docker/install.sh | bash /dev/stdin 1> /dev/null
+  test-18:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -s https://raw.githubusercontent.com/devcontainers/features/main/src/docker-in-docker/install.sh | bash /dev/stdin 1> /dev/null
+  test-19:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -s https://raw.githubusercontent.com/devcontainers/features/main/src/docker-in-docker/install.sh | bash /dev/stdin 1> /dev/null
+  
