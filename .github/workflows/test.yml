@@ -3,7 +3,7 @@ on: [push]
 jobs:
   image:
     name: Image
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -21,7 +21,7 @@ jobs:
           cacheFrom: ghcr.io/customink/dnd-demo-ci
           runCmd: echo DONE!
   test-0:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: image
     steps:
       - uses: actions/checkout@v3
@@ -30,10 +30,9 @@ jobs:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
           runCmd: |
-            /usr/local/share/docker-init.sh
             docker info
   test-1:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: image
     steps:
       - uses: actions/checkout@v3
@@ -42,10 +41,9 @@ jobs:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
           runCmd: |
-            /usr/local/share/docker-init.sh
             docker info
   test-2:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: image
     steps:
       - uses: actions/checkout@v3
@@ -54,10 +52,9 @@ jobs:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
           runCmd: |
-            /usr/local/share/docker-init.sh
             docker info
   test-3:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: image
     steps:
       - uses: actions/checkout@v3
@@ -66,10 +63,9 @@ jobs:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
           runCmd: |
-            /usr/local/share/docker-init.sh
             docker info
   test-4:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: image
     steps:
       - uses: actions/checkout@v3
@@ -78,10 +74,9 @@ jobs:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
           runCmd: |
-            /usr/local/share/docker-init.sh
             docker info
   test-5:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: image
     steps:
       - uses: actions/checkout@v3
@@ -90,10 +85,9 @@ jobs:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
           runCmd: |
-            /usr/local/share/docker-init.sh
             docker info
   test-6:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: image
     steps:
       - uses: actions/checkout@v3
@@ -102,10 +96,9 @@ jobs:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
           runCmd: |
-            /usr/local/share/docker-init.sh
             docker info
   test-7:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: image
     steps:
       - uses: actions/checkout@v3
@@ -114,10 +107,9 @@ jobs:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
           runCmd: |
-            /usr/local/share/docker-init.sh
             docker info
   test-8:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: image
     steps:
       - uses: actions/checkout@v3
@@ -126,10 +118,9 @@ jobs:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
           runCmd: |
-            /usr/local/share/docker-init.sh
             docker info
   test-9:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: image
     steps:
       - uses: actions/checkout@v3
@@ -138,4 +129,4 @@ jobs:
           push: never
           cacheFrom: ghcr.io/customink/crypteia-ci
           runCmd: |
-            
+            docker info
