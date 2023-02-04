@@ -30,7 +30,8 @@ jobs:
           push: never
           cacheFrom: ghcr.io/customink/dnd-demo-ci
           runCmd: |
-            docker info
+            docker run -d --name=dind -t -v /var/run/docker.sock:/var/run/docker.sock docker
+            docker exec -t dind docker ps
   test-1:
     runs-on: ubuntu-20.04
     needs: image
@@ -41,7 +42,8 @@ jobs:
           push: never
           cacheFrom: ghcr.io/customink/dnd-demo-ci
           runCmd: |
-            docker info
+            docker run -d --name=dind -t -v /var/run/docker.sock:/var/run/docker.sock docker
+            docker exec -t dind docker ps
   test-2:
     runs-on: ubuntu-20.04
     needs: image
@@ -52,7 +54,8 @@ jobs:
           push: never
           cacheFrom: ghcr.io/customink/dnd-demo-ci
           runCmd: |
-            docker info
+            docker run -d --name=dind -t -v /var/run/docker.sock:/var/run/docker.sock docker
+            docker exec -t dind docker ps
   test-3:
     runs-on: ubuntu-20.04
     needs: image
@@ -63,7 +66,8 @@ jobs:
           push: never
           cacheFrom: ghcr.io/customink/dnd-demo-ci
           runCmd: |
-            docker info
+            docker run -d --name=dind -t -v /var/run/docker.sock:/var/run/docker.sock docker
+            docker exec -t dind docker ps
   test-4:
     runs-on: ubuntu-20.04
     needs: image
@@ -74,7 +78,8 @@ jobs:
           push: never
           cacheFrom: ghcr.io/customink/dnd-demo-ci
           runCmd: |
-            docker info
+            docker run -d --name=dind -t -v /var/run/docker.sock:/var/run/docker.sock docker
+            docker exec -t dind docker ps
   test-5:
     runs-on: ubuntu-20.04
     needs: image
@@ -85,7 +90,8 @@ jobs:
           push: never
           cacheFrom: ghcr.io/customink/dnd-demo-ci
           runCmd: |
-            docker info
+            docker run -d --name=dind -t -v /var/run/docker.sock:/var/run/docker.sock docker
+            docker exec -t dind docker ps
   test-6:
     runs-on: ubuntu-20.04
     needs: image
@@ -96,7 +102,8 @@ jobs:
           push: never
           cacheFrom: ghcr.io/customink/dnd-demo-ci
           runCmd: |
-            docker info
+            docker run -d --name=dind -t -v /var/run/docker.sock:/var/run/docker.sock docker
+            docker exec -t dind docker ps
   test-7:
     runs-on: ubuntu-20.04
     needs: image
@@ -107,7 +114,8 @@ jobs:
           push: never
           cacheFrom: ghcr.io/customink/dnd-demo-ci
           runCmd: |
-            docker info
+            docker run -d --name=dind -t -v /var/run/docker.sock:/var/run/docker.sock docker
+            docker exec -t dind docker ps
   test-8:
     runs-on: ubuntu-20.04
     needs: image
@@ -118,7 +126,8 @@ jobs:
           push: never
           cacheFrom: ghcr.io/customink/dnd-demo-ci
           runCmd: |
-            docker info
+            docker run -d --name=dind -t -v /var/run/docker.sock:/var/run/docker.sock docker
+            docker exec -t dind docker ps
   test-9:
     runs-on: ubuntu-20.04
     needs: image
@@ -129,4 +138,125 @@ jobs:
           push: never
           cacheFrom: ghcr.io/customink/dnd-demo-ci
           runCmd: |
-            docker info
+            docker run -d --name=dind -t -v /var/run/docker.sock:/var/run/docker.sock docker
+            docker exec -t dind docker ps
+  test-10:
+    runs-on: ubuntu-20.04
+    needs: image
+    steps:
+      - uses: actions/checkout@v3
+      - uses: devcontainers/ci@v0.2
+        with:
+          push: never
+          cacheFrom: ghcr.io/customink/dnd-demo-ci
+          runCmd: |
+            docker run -d --name=dind -t -v /var/run/docker.sock:/var/run/docker.sock docker
+            docker exec -t dind docker ps
+  test-11:
+    runs-on: ubuntu-20.04
+    needs: image
+    steps:
+      - uses: actions/checkout@v3
+      - uses: devcontainers/ci@v0.2
+        with:
+          push: never
+          cacheFrom: ghcr.io/customink/dnd-demo-ci
+          runCmd: |
+            docker run -d --name=dind -t -v /var/run/docker.sock:/var/run/docker.sock docker
+            docker exec -t dind docker ps
+  test-12:
+    runs-on: ubuntu-20.04
+    needs: image
+    steps:
+      - uses: actions/checkout@v3
+      - uses: devcontainers/ci@v0.2
+        with:
+          push: never
+          cacheFrom: ghcr.io/customink/dnd-demo-ci
+          runCmd: |
+            docker run -d --name=dind -t -v /var/run/docker.sock:/var/run/docker.sock docker
+            docker exec -t dind docker ps
+  test-13:
+    runs-on: ubuntu-20.04
+    needs: image
+    steps:
+      - uses: actions/checkout@v3
+      - uses: devcontainers/ci@v0.2
+        with:
+          push: never
+          cacheFrom: ghcr.io/customink/dnd-demo-ci
+          runCmd: |
+            docker run -d --name=dind -t -v /var/run/docker.sock:/var/run/docker.sock docker
+            docker exec -t dind docker ps
+  test-14:
+    runs-on: ubuntu-20.04
+    needs: image
+    steps:
+      - uses: actions/checkout@v3
+      - uses: devcontainers/ci@v0.2
+        with:
+          push: never
+          cacheFrom: ghcr.io/customink/dnd-demo-ci
+          runCmd: |
+            docker run -d --name=dind -t -v /var/run/docker.sock:/var/run/docker.sock docker
+            docker exec -t dind docker ps
+  test-15:
+    runs-on: ubuntu-20.04
+    needs: image
+    steps:
+      - uses: actions/checkout@v3
+      - uses: devcontainers/ci@v0.2
+        with:
+          push: never
+          cacheFrom: ghcr.io/customink/dnd-demo-ci
+          runCmd: |
+            docker run -d --name=dind -t -v /var/run/docker.sock:/var/run/docker.sock docker
+            docker exec -t dind docker ps
+  test-16:
+    runs-on: ubuntu-20.04
+    needs: image
+    steps:
+      - uses: actions/checkout@v3
+      - uses: devcontainers/ci@v0.2
+        with:
+          push: never
+          cacheFrom: ghcr.io/customink/dnd-demo-ci
+          runCmd: |
+            docker run -d --name=dind -t -v /var/run/docker.sock:/var/run/docker.sock docker
+            docker exec -t dind docker ps
+  test-17:
+    runs-on: ubuntu-20.04
+    needs: image
+    steps:
+      - uses: actions/checkout@v3
+      - uses: devcontainers/ci@v0.2
+        with:
+          push: never
+          cacheFrom: ghcr.io/customink/dnd-demo-ci
+          runCmd: |
+            docker run -d --name=dind -t -v /var/run/docker.sock:/var/run/docker.sock docker
+            docker exec -t dind docker ps
+  test-18:
+    runs-on: ubuntu-20.04
+    needs: image
+    steps:
+      - uses: actions/checkout@v3
+      - uses: devcontainers/ci@v0.2
+        with:
+          push: never
+          cacheFrom: ghcr.io/customink/dnd-demo-ci
+          runCmd: |
+            docker run -d --name=dind -t -v /var/run/docker.sock:/var/run/docker.sock docker
+            docker exec -t dind docker ps
+  test-19:
+    runs-on: ubuntu-20.04
+    needs: image
+    steps:
+      - uses: actions/checkout@v3
+      - uses: devcontainers/ci@v0.2
+        with:
+          push: never
+          cacheFrom: ghcr.io/customink/dnd-demo-ci
+          runCmd: |
+            docker run -d --name=dind -t -v /var/run/docker.sock:/var/run/docker.sock docker
+            docker exec -t dind docker ps
